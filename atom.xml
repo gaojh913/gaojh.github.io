@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-03-29T09:07:50.480Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>高建行</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://yoursite.com/2017/03/29/test/"/>
+    <id>http://yoursite.com/2017/03/29/test/</id>
+    <published>2017-03-29T09:07:10.000Z</published>
+    <updated>2017-03-29T09:07:50.480Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="first-test-passage"><a href="#first-test-passage" class="headerlink" title="first test passage"></a>first test passage</h1>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;first-test-passage&quot;&gt;&lt;a href=&quot;#first-test-passage&quot; class=&quot;headerlink&quot; title=&quot;first test passage&quot;&gt;&lt;/a&gt;first test passage&lt;/h1&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
