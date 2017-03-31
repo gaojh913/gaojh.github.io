@@ -95,7 +95,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/03/31/formjs/index.html">
 <meta property="og:site_name" content="My Biography">
 <meta property="og:description" content="简介&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;表单常用原生JS效果。">
-<meta property="og:updated_time" content="2017-03-31T10:47:53.394Z">
+<meta property="og:updated_time" content="2017-03-31T11:03:16.772Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="表单常用JS">
 <meta name="twitter:description" content="简介&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;表单常用原生JS效果。">
@@ -421,14 +421,9 @@
 </script>
 
 <p><input type="text" style="ime-mode:disabled; -webket-ime-mode:disabled" onpaste="return false" placeholder="关闭中文输入法"><br>通过设定style=”ime-mode:disabled”实现(chrome无效)</p>
-<input type="text" oncut="return false" oncopy="return false" onpaste="return false" oncontextmenu="return false" placeholder="禁止粘贴复制">
-
-<input type="text" oncut="return false" oncopy="return false" onpaste="return false" oncontextmenu="return false" disabled="true" placeholder="禁止输入-disabled">
-
-<input type="text" oncut="return false" oncopy="return false" onpaste="return false" oncontextmenu="return false" readonly="true" placeholder="禁止输入-readonly">
-
-<input type="text" maxlength="10" placeholder="最多输入10个字符">
-
+<p><input type="text" oncut="return false" oncopy="return false" onpaste="return false" oncontextmenu="return false" placeholder="禁止粘贴复制"><br></p>
+<p><input type="text" oncut="return false" oncopy="return false" onpaste="return false" oncontextmenu="return false" disabled="true" placeholder="禁止输入-disabled"><input type="text" oncut="return false" oncopy="return false" onpaste="return false" oncontextmenu="return false" readonly="true" placeholder="禁止输入-readonly"><br></p>
+<p><input type="text" maxlength="10" placeholder="最多输入10个字符"><br></p>
 <p><textarea id="textareaL" maxlength="140" placeholder="动态提示剩余输入字数" cols="47" rows="10"></textarea><br>还可以输入<span id="tipsL">140</span>个字</p>
 <script type="text/javascript">
     (function(){
@@ -452,8 +447,7 @@
     }());
 </script>
 
-<h5 id="复选框和下拉框"><a href="#复选框和下拉框" class="headerlink" title="复选框和下拉框"></a>复选框和下拉框</h5><p><input type="checkbox" class="checkbox" id="all"><label for="all">全选选项</label></p>
-<p><input type="checkbox" class="checkbox" name="item" id="checkOne"><label for="checkOne">选项（一）</label><input type="checkbox" class="checkbox" name="item" id="checkTwo"><label for="checkTwo">选项（二）</label><input type="checkbox" class="checkbox" name="item" id="checkThree"><label for="checkThree">选项（三）</label></p>
+<h5 id="复选框和下拉框"><a href="#复选框和下拉框" class="headerlink" title="复选框和下拉框"></a>复选框和下拉框</h5><p><input type="checkbox" class="checkbox" id="all"><label for="all">全选选项</label><input type="checkbox" class="checkbox" name="item" id="checkOne"><label for="checkOne">选项（一）</label><input type="checkbox" class="checkbox" name="item" id="checkTwo"><label for="checkTwo">选项（二）</label><input type="checkbox" class="checkbox" name="item" id="checkThree"><label for="checkThree">选项（三）</label></p>
 <script>
     (function(){
         var all = document.getElementById("all");
@@ -579,8 +573,7 @@
     }());
 </script>
 
-<div style="position: relative;"><br><input style="position: absolute; top: 0; left: 0; z-index:2; width:90px; height: 20px; border-right:none;" type="text" id="addSel"><select style="position: absolute; top: 0; left: 0; z-index:1; width:115px; height: 20px" id="selAddDel"></select><input style="position: absolute; top: 0; left: 120px;" type="button" id="delSel" value="删除"><br></div>
-
+<p><input type="text" id="addSel"><select id="selAddDel"></select><input type="button" id="delSel" value="删除"></p>
 <script>
     (function(){
         var addSel = document.getElementById("addSel");
@@ -603,10 +596,6 @@
         delSel.onclick = function(){
             var i = selAddDel.selectedIndex;
             selAddDel.options.remove(i);
-            addSel.value = "";
-        }
-        selAddDel.onchange = function(){
-            addSel.value = this.value;
         }
     }());
 </script>
